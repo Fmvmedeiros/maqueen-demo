@@ -5,8 +5,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "maqueen": "github:dfrobot/pxt-maqueen#v1.6.0",
-        "neopixel": "github:Microsoft/pxt-neopixel#v0.7.3"
+        "neopixel": "github:Microsoft/pxt-neopixel#v0.7.3",
+        "maqueen": "github:dfrobot/pxt-maqueen#v1.7.2"
     },
     "files": [
         "main.blocks",
@@ -17,7 +17,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "4.0.18",
+        "target": "7.0.51",
         "targetId": "microbit"
     },
     "supportedTargets": [
