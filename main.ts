@@ -16,7 +16,7 @@ radio.onReceivedValue(function (name, value) {
             Direcção = 2
         } else if (value == 11 || value == 22) {
             vdir = 100
-            vdir = 100
+            vesq = 100
         }
     }
     if (Direcção == 0) {
