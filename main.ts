@@ -1,11 +1,14 @@
 radio.onReceivedValue(function (name, value) {
     if (name == "virar") {
         if (value > 0) {
-            vdir = Math.map(Math.constrain(value, 0, 90), 0, 90, vdir, 0)
+            Vira = Math.constrain(value, 0, 90)
+            vdir = Math.map(Vira, 0, 90, Velocidade, 0)
             vesq = Velocidade
         } else if (value < 0) {
             vdir = Velocidade
-            vesq = Math.map(Math.constrain(value, 0, 90), 0, 90, 0, vesq)
+            Vira = value * -1
+            Vira = Math.constrain(Vira, 0, 90)
+            vesq = Math.map(Vira, 0, 90, Velocidade, 0)
         }
     } else if (name == "andar") {
         if (value == 0) {
@@ -33,6 +36,7 @@ radio.onReceivedValue(function (name, value) {
         maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, vdir)
     }
 })
+let Vira = 0
 let Velocidade = 0
 let Direcção = 0
 let vesq = 0
