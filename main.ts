@@ -1,5 +1,5 @@
 radio.onReceivedValue(function (name, value) {
-    if (name == "virar") {
+    if (name == "virar" && (value < 15 || value > -15)) {
         if (value > 0) {
             Vira = Math.constrain(value, 0, 90)
             vdir = Math.map(Vira, 0, 90, Velocidade, 0)
@@ -18,8 +18,8 @@ radio.onReceivedValue(function (name, value) {
         } else if (value == 2) {
             Direcção = 2
         } else if (value == 11 || value == 22) {
-            vdir = Velocidade
-            vesq = Velocidade
+            vdir = 100
+            vesq = 100
         }
     }
     if (Direcção == 0) {
