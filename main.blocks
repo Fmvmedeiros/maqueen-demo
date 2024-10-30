@@ -1,4 +1,4 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Yy]8fWVxHfoM.aafucKf">RadioControl</variable><variable id="Heh2^}.H=;(3]2#i[#gE">vesq</variable><variable id="?DtQDMj+S}OoO;s,MfsX">vdir</variable><variable id="w8X|e[7.#+=[voA+1L?^">Direcção</variable></variables><block type="pxt-on-start" id="r}9qIGc^sXba_ee.j8B`" x="-365" y="-8"><statement name="HANDLER"><block type="device_show_leds" id="V3a2Ijw~8A0{_Q$vhtDG"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Yy]8fWVxHfoM.aafucKf">RadioControl</variable><variable id="Heh2^}.H=;(3]2#i[#gE">vesq</variable><variable id="?DtQDMj+S}OoO;s,MfsX">vdir</variable><variable id="w8X|e[7.#+=[voA+1L?^">Direcção</variable><variable id="`MHn-7rx[Z~GTli8o.2^">strip</variable></variables><block type="pxt-on-start" id="r}9qIGc^sXba_ee.j8B`" x="-1407" y="-53"><statement name="HANDLER"><block type="device_show_leds" id="V3a2Ijw~8A0{_Q$vhtDG"><field name="LEDS">`
         # # # # # 
         . . . . # 
         # # # # # 
