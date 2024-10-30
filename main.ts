@@ -2,9 +2,9 @@ radio.onReceivedValue(function (name, value) {
     if (name == "virar") {
         if (value > 0) {
             vdir = Math.map(Math.constrain(value, 0, 90), 0, 90, vdir, 0)
-            vesq = 100
+            vesq = Velocidade
         } else if (value < 0) {
-            vdir = 100
+            vdir = Velocidade
             vesq = Math.map(Math.constrain(value, 0, 90), 0, 90, 0, vesq)
         }
     } else if (name == "andar") {
@@ -15,8 +15,8 @@ radio.onReceivedValue(function (name, value) {
         } else if (value == 2) {
             Direcção = 2
         } else if (value == 11 || value == 22) {
-            vdir = 100
-            vesq = 100
+            vdir = Velocidade
+            vesq = Velocidade
         }
     }
     if (Direcção == 0) {
@@ -33,6 +33,7 @@ radio.onReceivedValue(function (name, value) {
         maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CCW, vdir)
     }
 })
+let Velocidade = 0
 let Direcção = 0
 let vesq = 0
 let vdir = 0
@@ -47,3 +48,4 @@ radio.setGroup(2)
 vdir = 100
 vesq = 100
 Direcção = 0
+Velocidade = 255
